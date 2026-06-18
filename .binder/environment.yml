@@ -1,0 +1,7 @@
+name: datalab
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - r-base
+  - r-devtools

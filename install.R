@@ -1,0 +1,6 @@
+
+if (!requireNamespace("devtools", quietly = TRUE)) {
+  install.packages("devtools", repos = "https://cloud.r-project.org")
+}
+
+devtools::install_github("pacificclimate/climdex.pcic")
