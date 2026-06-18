@@ -1,9 +1,11 @@
 #!/bin/bash
 
 Rscript -e '
-if (!requireNamespace("devtools", quietly = TRUE)) {
-  install.packages("devtools", repos = "https://cloud.r-project.org")
+options(repos="https://cloud.r-project.org")
+
+if (!requireNamespace("remotes", quietly=TRUE))
+  install.packages("remotes")
 }
 
-devtools::install_github("pacificclimate/climdex.pcic")
+remotes::install_github("pacificclimate/climdex.pcic")
 '
